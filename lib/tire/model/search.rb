@@ -62,7 +62,7 @@ module Tire
         #
         #     Article.search :load => { :include => 'comments' } do ... end
         #
-        def search(*args, &block)
+        def search2(*args, &block)
           default_options = {:type => document_type, :index => index.name}
 
           if block_given?
