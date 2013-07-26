@@ -58,8 +58,8 @@ module Tire
         self
       end
 
-      def sort(&block)
-        @sort = Sort.new(&block).to_ary
+      def sort(*args, &block)
+        @sort = Sort.new(*args, &block).to_ary
         self
       end
 
